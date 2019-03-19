@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+html, body{
+	margin: 0 auto;
+}
+.header { 
+	text-align: center;
+	font-family: Sofia, Arial, sans-serif;
+ }
+
+ .subheader {
+ 	font-family: Roboto, Arial, sans-serif;
+ }
+
+ #figcaption {
+ 	font-size: 15px;
+ 	max-width: 65%;
+ 	background-color: gray;
+ }
