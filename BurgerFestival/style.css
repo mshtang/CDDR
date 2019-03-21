@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Sofia');
 
-html, body{
+* {
+	box-sizing: border-box;
+}
+
+body{
 	margin: 0 auto;
+	background: #edf1f7;
 }
 .header { 
 	text-align: center;
@@ -12,8 +17,52 @@ html, body{
  	font-family: Roboto, Arial, sans-serif;
  }
 
- #figcaption {
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%
+}
+
+.caption {
  	font-size: 15px;
- 	max-width: 65%;
- 	background-color: gray;
+ 	text-align: right;
+ 	background-color: #e8ebef;
  }
+
+ .leftcolumn {
+ 	float: left;
+ 	width: 50%
+ }
+
+ .rightcolumn{
+ 	float: left;
+ 	width: 50%
+ }
+
+ .card {
+	background-color: white;
+	width:95%;
+	margin:auto;
+}
+
+ .row:after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ }
+ 
+ @media screen and (max-width: 600px){
+ 	.leftcolumn, .rightcolumn{
+ 		width: 100%;
+ 		padding: 0;
+ 	}
+}
+
+.video {
+	text-align: center;
+}
+
+.footer {
+	float:right;
+}
