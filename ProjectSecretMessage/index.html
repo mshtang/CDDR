@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Secret Message</title>
+</head>
+<body>
+	<script>
+		function myFunc() {
+		var ciaMessage = "The dog will eat a german bratwurst".split(" ");
+		ciaMessage.pop();
+		ciaMessage.push("breakfast");
+		ciaMessage.push("in");
+		ciaMessage.push("Munich");
+		console.log(ciaMessage.join());
+		ciaMessage[1] = "minister";
+		ciaMessage.shift();
+		ciaMessage.unshift("prime");
+		var idx = ciaMessage.indexOf("in");
+		ciaMessage.splice(idx, 2, "at", "the", "oval", "office");
+		console.log(ciaMessage.join());
+		var num = Math.random() * (ciaMessage.length * 10 - ciaMessage.length + 1) + ciaMessage.length;
+		ciaMessage.push(num);
+		console.log(ciaMessage.join());
+	}
+	</script>
+	<button onclick="myFunc()">try this</button>
+</body>
+</html>
