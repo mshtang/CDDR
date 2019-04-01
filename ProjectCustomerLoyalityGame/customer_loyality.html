@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custumer Loyalty</title>
+</head>
+<body>
+	<button onclick="promptUser();">click to input your name</button>
+	<p id="name"></p>
+	<button onclick="guessNumber();">click to input a number</button>
+	<p id="number"></p>
+<script>
+	function promptUser(){
+		var newUser = prompt("Please enter your name", "");
+		if (newUser	!= null){
+			document.getElementById("name").innerHTML = "Hello " + newUser; 
+		}
+	}
+
+	function guessNumber(){
+		var number = prompt("Please enter a number", "");
+		number = parseInt(number);
+		if (number != null){
+			var text = "";
+			switch (number){
+				case 0:
+				case 1:
+				case 2:
+				case 3:
+				case 4: 
+					text = "This is too low.";
+					break;
+				default: 
+					text = "this is sufficiently high enough.";
+			}
+			alert(text);
+			document.getElementById("number").innerHTML = text;
+		}
+	}
+</script>
+
+</body>
+</html>
