@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Try Combinator</title>
+</head>
+<body>
+	<h1>Interview Arrangements</h1>
+	<form>
+		Are you a US company? 
+		<input type="radio" name="company" value=1> Yes
+		<input type="radio" name="company" value=0 checked> No <br>
+		Do you have a developer in your founding members?
+		<input type="radio" name="member" value=1> Yes
+		<input type="radio" name="member" value=0 checked> No <br>
+	</form>
+	<p>Click the button to show the interview arrangements.</p>
+	<script src="interviews.js"></script>
+	<button type="button" onclick="makeArrangements()">Show Arrangements</button>
+	<p id="showArrangements"></p>
+	<p id="showAccepted"></p>
+</body>
+</html>
